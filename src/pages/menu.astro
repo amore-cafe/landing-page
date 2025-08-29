@@ -1,0 +1,47 @@
+---
+import Grid from "@components/menu/grid.svelte";
+import IndexLayout from "@/layouts/indexLayout.astro";
+import { Image } from "astro:assets";
+import AmoreLogo from "@assets/images/amore-logo-rect.png";
+---
+
+<IndexLayout>
+  <main class="menu-page flex flex-col h-screen bg-accent gap-4">
+    <!-- Menu Header -->
+    <header
+      class="header-section flex h-24 p-4 items-center gap-4 flex-shrink-0 bg-[#996365]">
+      <a href="/">
+        <Image src={AmoreLogo} alt="" height={64} />
+      </a>
+      <div class="header-divider w-16 h-px bg-accent"></div>
+      <h1
+        class="menu-title text-accent font-agrandir text-5xl font-light leading-none">
+        Menu
+      </h1>
+      <div class="header-divider w-full h-px bg-accent"></div>
+    </header>
+
+    <!-- Menu Grid -->
+
+    <Grid client:load class="h-max overflow-y-scroll" />
+
+    <!-- Bottom Navigation -->
+    <nav
+      class="bottom-navigation flex w-full h-16 px-4 justify-between items-center flex-shrink-0 bg-accent">
+      <a
+        href="/"
+        class="back-button flex h-8 px-0.5 justify-center items-center rounded-2xl">
+        <svg
+          width="40"
+          height="32"
+          viewBox="0 0 40 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.29289 15.2929C0.902369 15.6834 0.902369 16.3166 1.29289 16.7071L7.65685 23.0711C8.04738 23.4616 8.68054 23.4616 9.07107 23.0711C9.46159 22.6805 9.46159 22.0474 9.07107 21.6569L3.41421 16L9.07107 10.3431C9.46159 9.95262 9.46159 9.31946 9.07107 8.92893C8.68054 8.53841 8.04738 8.53841 7.65685 8.92893L1.29289 15.2929ZM38 17C38.5523 17 39 16.5523 39 16C39 15.4477 38.5523 15 38 15V16V17ZM2 16L2 17L38 17V16V15L2 15L2 16Z"
+            fill="#996365"></path>
+        </svg>
+      </a>
+    </nav>
+  </main>
+</IndexLayout>

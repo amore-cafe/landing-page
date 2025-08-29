@@ -1,0 +1,126 @@
+---
+import IndexLayout from "@/layouts/indexLayout.astro";
+import AmoreLogo from "@assets/images/amore-logo-rect.png";
+import { Image } from "astro:assets";
+---
+
+<IndexLayout>
+  <main class="menu-page flex flex-col h-screen bg-accent gap-4">
+    <!-- Header Section -->
+    <header
+      class="header-section flex h-24 p-4 items-center gap-4 flex-shrink-0 bg-[#996365]">
+      <a href="/">
+        <Image src={AmoreLogo} alt="" height={64} />
+      </a>
+      <div class="header-divider w-16 h-px bg-accent"></div>
+      <h1
+        class="menu-title text-accent font-agrandir text-5xl font-light leading-none">
+        Location
+      </h1>
+      <div class="header-divider w-full h-px bg-accent"></div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="location-content flex-1 p-8 flex flex-col gap-4">
+      <!-- Map Container -->
+      <div
+        class="map-container h-full p-1 border"
+        style="border-color: #996365;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14689.187458097254!2d72.4855303!3d23.0128698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bb2be129ab7%3A0xa5b528ad849c16a1!2sAmore%20Cafe!5e0!3m2!1sen!2sin!4v1756403375070!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Address Information -->
+      <div class="address-section flex justify-start items-start gap-4">
+        <span
+          class="address-label text-base font-light xl:text-xl"
+          style="color: #000; font-family: var(--font-agrandir);">
+          Address:
+        </span>
+        <address
+          class="address-text text-base font-light not-italic xl:text-xl"
+          style="width: 30ch; color: #000; font-family: var(--font-agrandir);">
+          531/1, Off Karnavati club Road, Opp. Street toys near Atma nirbhar
+          cafe Mumatpura. Ahmedabad Gujarat 380054
+        </address>
+      </div>
+    </section>
+
+    <!-- Back Navigation -->
+    <nav
+      class="back-navigation w-[402px] h-12 px-4 flex items-center"
+      style="background: #F9F3E7;">
+      <a
+        href="/"
+        class="back-button flex h-8 px-0.5 justify-center items-center rounded-2xl">
+        <svg
+          class="back-arrow w-10 h-8"
+          viewBox="0 0 40 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.29289 15.2929C0.902369 15.6834 0.902369 16.3166 1.29289 16.7071L7.65685 23.0711C8.04738 23.4616 8.68054 23.4616 9.07107 23.0711C9.46159 22.6805 9.46159 22.0474 9.07107 21.6569L3.41421 16L9.07107 10.3431C9.46159 9.95262 9.46159 9.31946 9.07107 8.92893C8.68054 8.53841 8.04738 8.53841 7.65685 8.92893L1.29289 15.2929ZM38 17C38.5523 17 39 16.5523 39 16C39 15.4477 38.5523 15 38 15V16V17ZM2 16L2 17L38 17V16V15L2 15L2 16Z"
+            fill="#996365"></path>
+        </svg>
+      </a>
+    </nav>
+  </main>
+</IndexLayout>
+
+<style lang="scss">
+  .location-page {
+    font-family: var(--font-agrandir);
+  }
+
+  .location-header {
+    flex-shrink: 0;
+  }
+
+  .location-title {
+    white-space: nowrap;
+  }
+
+  .map-container {
+    align-self: stretch;
+  }
+
+  .map-placeholder {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .address-text {
+    line-height: normal;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .location-title {
+      font-size: 2rem;
+    }
+
+    .location-content {
+      padding: 1rem;
+    }
+
+    .map-container {
+      height: 400px;
+    }
+
+    .address-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .back-navigation {
+      width: 100%;
+    }
+  }
+</style>

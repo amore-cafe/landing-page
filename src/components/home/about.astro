@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import InstagramLogo from "@assets/logos/instagram-logo.svg";
+---
+
+<section class="about-section flex p-4">
+  <h2 class="section-title">Who we are</h2>
+  <div class="about-content w-full flex flex-col-reverse lg:flex-row gap-8">
+    <div class="about-text flex-1">
+      <div class="text-content">
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+        <div class="text-line"></div>
+      </div>
+      <div class="social-info">
+        <a href="https://www.instagram.com/amore.amd" class="social-handle">
+          <Image
+            class="logo-image"
+            src={InstagramLogo}
+            alt="Amore Cafe Logo"
+            height={24}
+          />
+          <div class="handle-text">@amore.amd</div>
+          <div class="social-icon"></div>
+        </a>
+      </div>
+    </div>
+    <div class="about-image w-full flex-1 border border-[#996365]">
+      <div class="image-placeholder"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .about-text {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .text-line {
+    height: 1.5rem;
+    width: 100%;
+    background: #d9d9d9;
+  }
+
+  .social-info {
+    display: flex;
+    padding: 3rem 0;
+    justify-content: space-between;
+    align-items: center;
+
+    .social-handle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 1 0 0;
+
+      .handle-text {
+        color: #000;
+        font-family:
+          Agrandir,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 1rem;
+        letter-spacing: 1.05px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  .image-placeholder {
+    height: 368px;
+    width: 100%;
+    background: #d9d9d9;
+  }
+</style>

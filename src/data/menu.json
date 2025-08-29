@@ -1,0 +1,604 @@
+{
+  "menu": [
+    {
+      "section": "Mocktails",
+      "items": [
+        {
+          "name": "Mojitos",
+          "description": "Lemon, mint, peach, blueberry, cranberry, pomegranate",
+          "price": 150
+        },
+        {
+          "name": "Long Island Ice Tea",
+          "description": "Lemon, lemon ginger, berry blast, lemon grass, green apple, peach",
+          "price": 140
+        },
+        {
+          "name": "Rocking Guava Punch",
+          "description": "Guava juice, Tabasco, salt rimmed",
+          "price": 160
+        },
+        {
+          "name": "American Sunrise",
+          "description": "Orange & Pineapple based drink",
+          "price": 160
+        },
+        {
+          "name": "Pussyfoot",
+          "description": "Passion fruit, Peach, Grenadine based",
+          "price": 170
+        },
+        {
+          "name": "The Universe",
+          "description": "Blue caraco, Cranberry, Pineapple, Grenadine based",
+          "price": 160
+        },
+        {
+          "name": "Blue Ocean",
+          "description": "Blue caraco, Lemon and Mint",
+          "price": 140
+        },
+        {
+          "name": "Passion In The Beach",
+          "description": "Passion fruit, Peach, Cranberry, Orange",
+          "price": 160
+        },
+        {
+          "name": "Watermelon Auga",
+          "description": "Fresh Watermelon, Grenadine, Mint & Lemon",
+          "price": 170
+        },
+        {
+          "name": "Virgin Pina Colada",
+          "description": "Fresh Pineapple, Coconut cream, Coconut water",
+          "price": 170
+        },
+        {
+          "name": "The Energy Punch For Couple",
+          "description": "Mint, Lemon and Red bull",
+          "price": 299
+        }
+      ]
+    },
+    {
+      "section": "Hot Coffee",
+      "items": [
+        {
+          "name": "Americano",
+          "description": "",
+          "price": 119
+        },
+        {
+          "name": "Mocha",
+          "description": "",
+          "price": 149
+        },
+        {
+          "name": "Affogato",
+          "description": "",
+          "price": 149
+        },
+        {
+          "name": "Irish Coffee",
+          "description": "",
+          "price": 199
+        },
+        {
+          "name": "Cappuccino",
+          "description": "",
+          "price": 149
+        },
+        {
+          "name": "Espresso 30ml",
+          "description": "",
+          "price": 89
+        },
+        {
+          "name": "Regular Coffee",
+          "description": "",
+          "price": 99
+        },
+        {
+          "name": "Doppio 60 Ml",
+          "description": "",
+          "price": 119
+        },
+        {
+          "name": "Café Late",
+          "description": "",
+          "price": 149
+        },
+        {
+          "name": "Salted Caramel",
+          "description": "A hot coffee with Irish, Caramel, Hazelnut or Cinnamon flavors",
+          "price": 169
+        },
+        {
+          "name": "Make Your Own Late",
+          "description": "A hot coffee with Irish, Caramel, Hazelnut or Cinnamon flavors",
+          "price": 169
+        }
+      ]
+    },
+    {
+      "section": "Iced Coffee",
+      "items": [
+        {
+          "name": "Iced Americano",
+          "description": "",
+          "price": 149
+        },
+        {
+          "name": "Peached Ice Americano",
+          "description": "",
+          "price": 169
+        },
+        {
+          "name": "Iced Latte",
+          "description": "",
+          "price": 169
+        },
+        {
+          "name": "Iced Caramel Macchioto",
+          "description": "",
+          "price": 179
+        },
+        {
+          "name": "Redbull Espresso",
+          "description": "",
+          "price": 349
+        }
+      ]
+    },
+    {
+      "section": "Iced Tea",
+      "items": [
+        {
+          "name": "Lemon Ice Tea",
+          "description": "Lemon, Peach, Lemon & Mint, Watermelon, Strawberry Cinnamon, Passion Fruit, Blue Caracoo",
+          "price": 149
+        },
+        {
+          "name": "Blueberry Ice Tea",
+          "description": "Blueberry, Strawberry, Cranberry",
+          "price": 159
+        }
+      ]
+    },
+    {
+      "section": "Cold Coffee",
+      "items": [
+        {
+          "name": "The Classic Cold Coffee",
+          "description": "",
+          "price": 189
+        },
+        {
+          "name": "Tiramisu Cold Coffee",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Double Shot Cold Coffee",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Irish Cold Coffee",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Caramel Cold Coffee",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Hazelnut Cold Coffee",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "French Vanilla",
+          "description": "",
+          "price": 279
+        },
+        {
+          "name": "Cookie Crunch",
+          "description": "",
+          "price": 279
+        },
+        {
+          "name": "Mocha",
+          "description": "",
+          "price": 289
+        },
+        {
+          "name": "Salted Caramel",
+          "description": "",
+          "price": 249
+        }
+      ]
+    },
+    {
+      "section": "Thick Shakes",
+      "items": [
+        {
+          "name": "Oreo Shake",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Double Ton Choclate",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Berry Blast",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Tresleshe Shake",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Kitkat",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Snicker",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Browniee Fudge Cake",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Cookieen Cream",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Nutella Peanut Banana",
+          "description": "",
+          "price": 249
+        },
+        {
+          "name": "Ferrero Rocher",
+          "description": "",
+          "price": 349
+        }
+      ]
+    },
+    {
+      "section": "Burger",
+      "items": [
+        {
+          "name": "Butter Burger",
+          "description": "The cottage cheese burger topped with flavored butter directly on the patty.",
+          "price": 199
+        },
+        {
+          "name": "Bbq Mushroom Burger",
+          "description": "A smokey vegetarian burger made with mushroom patty, lettuce, onion, and some BBQ sauce.",
+          "price": 169
+        },
+        {
+          "name": "Cheese Burger",
+          "description": "The cheeseburger is stuffed with liquid cheese and a slice of cheese is melted over the patty.",
+          "price": 169
+        },
+        {
+          "name": "The Amore Special",
+          "description": "A fan favorite from Amore Special is known for its locally sourced vegetables and fresh toppings.",
+          "price": 199
+        }
+      ]
+    },
+    {
+      "section": "Toasties",
+      "items": [
+        {
+          "name": "Cheese Chilli Toast",
+          "description": "Slices of bread topped with cheese (usually Amul cheese) and green chilies for that kick. Veggies like onions, green bell peppers, and green onions are also often added to it",
+          "price": 129
+        },
+        {
+          "name": "Cheese Jam",
+          "description": "Just spread jam on bread and bung a piece of cheese on top.",
+          "price": 119
+        },
+        {
+          "name": "Avocado Toasties",
+          "description": "Avocado toast is an open sandwich consisting of toasted bread topped with mashed avocado",
+          "price": 349
+        },
+        {
+          "name": "Vegetable Toasties",
+          "description": "A toasted bread slice topped with creamy vegetable filling.",
+          "price": 199
+        },
+        {
+          "name": "Bun Maska",
+          "description": "The Irani cafés of Mumbai are a unique part of the city's history. Founded about 120 years ago by Zoroastrian and Shia immigrants from Iran.",
+          "price": 119
+        }
+      ]
+    },
+    {
+      "section": "Sandwich & Wraps",
+      "items": [
+        {
+          "name": "Avocado Croissant Sandwich",
+          "description": "The avocado recipe packed with juicy tomatoes, herby pesto, and croissant.",
+          "price": 399
+        },
+        {
+          "name": "Croissant Corn Chilli Cheese Sandwich",
+          "description": "The fusion of flaky butter croissant and the flavor of corn, chili, and cheese.",
+          "price": 299
+        },
+        {
+          "name": "Mexican Mushroom And Spinach Sandwich",
+          "description": "A Mexican-style sandwich with kidney beans, avocado, chilies, and mushrooms sautéed with garlic and spinach.",
+          "price": 299
+        },
+        {
+          "name": "Spicy Paneer Sandwich",
+          "description": "A perfect mouthwatering recipe with paneer, Indian spices, capsicum & sauce, served with potato chips.",
+          "price": 299
+        },
+        {
+          "name": "Tandoori Paneer Wrap",
+          "description": "Tandoori paneer, green chutney, and veggie salad wrapped in a tortilla.",
+          "price": 299
+        },
+        {
+          "name": "Chimichanga",
+          "description": "A chimichanga is a deep-fried burrito. It's essentially a flour tortilla filled with various ingredients, most commonly rice, beans, cheese, and then deep-fried until crispy.",
+          "price": 399
+        }
+      ]
+    },
+    {
+      "section": "Appetizers",
+      "items": [
+        {
+          "name": "French Fries",
+          "description": "The finger chips served with salt.",
+          "price": 99
+        },
+        {
+          "name": "Cheese Fries",
+          "description": "The finger chips served with cheese sauce.",
+          "price": 169
+        },
+        {
+          "name": "Piri Piri Fries",
+          "description": "The finger chips with a piri piri seasoning.",
+          "price": 129
+        },
+        {
+          "name": "Toastada",
+          "description": "A tostada is a flat, crispy corn tortilla that is typically layered with mashed or refried beans, protein, cheese and toppings such as lettuce, tomatoes, salsa and avocado.",
+          "price": 169
+        },
+        {
+          "name": "Tacos",
+          "description": "Classic Mexican street food, customizable with various proteins and toppings",
+          "price": 299
+        },
+        {
+          "name": "Crispy Canneloni",
+          "description": "A crispy deep-fried cannelloni served with red sauce.",
+          "price": 199
+        },
+        {
+          "name": "Mezze Platter",
+          "description": "Inspired by Middle Eastern mezze, this mezze platter features pita, veggies, dips, and more.",
+          "price": 399
+        },
+        {
+          "name": "Loaded Nachos",
+          "description": "These classic Tex-Mex nachos are loaded to the max with cheese, refried beans, guacamole, and salsa.",
+          "price": 249
+        },
+        {
+          "name": "Cheese Nachos",
+          "description": "A popular Tex-Mex appetizer or snack consisting of tortilla chips topped with melted cheese",
+          "price": 249
+        },
+        {
+          "name": "Quesadilla",
+          "description": "Mexican dish consisting of a tortilla that is filled primarily with cheese, spices, and other fillings",
+          "price": 349
+        },
+        {
+          "name": "Cheese Fingers",
+          "description": "A type of finger food, usually consisting of cheese coated in breadcrumbs, and often deep-fried or baked.",
+          "price": 249
+        },
+        {
+          "name": "Cheese Vada Pav Roll",
+          "description": "The authentic Vada Pav served in another way, filled with cheese sauce.",
+          "price": 249
+        },
+        {
+          "name": "Korean Garlic Bread",
+          "description": "It consists of a soft, fluffy bread roll generously stuffed with a luscious cream cheese filling and dipped in a savory garlic butter spread.",
+          "price": 149
+        },
+        {
+          "name": "Mexican Hot Pot Rice",
+          "description": "A popular rice recipe made with a combination of mixed vegetable, rice, beans, corn, vegetable stoc.",
+          "price": 399
+        }
+      ]
+    },
+    {
+      "section": "Pizza 10 Inch",
+      "items": [
+        {
+          "name": "Margherita",
+          "description": "A classic Neapolitan pizza featuring simple, high-quality ingredients: fresh mozzarella cheese, basil leaves, and extra virgin olive oil.",
+          "price": 349
+        },
+        {
+          "name": "Farm Fresh Pizza",
+          "description": "Typically emphasizes the use of fresh, high-quality ingredients, often locally sourced.",
+          "price": 399
+        },
+        {
+          "name": "Cinque Funghi",
+          "description": "Tomato, mozzarella, and mixed mushrooms.",
+          "price": 399
+        },
+        {
+          "name": "Spinach E Pinoli",
+          "description": "Tomato, mozzarella, spinach, mixed nuts, and red capsicum.",
+          "price": 399
+        },
+        {
+          "name": "The Devil Pizza",
+          "description": "Pizza topped with onion, capsicum, red paprika, spicy cottage cheese per peri and devils spiced sauce.",
+          "price": 349
+        },
+        {
+          "name": "Noci E Ananas",
+          "description": "Tomato, mozzarella, Grana Padano, pineapple, nuts, honey & basil.",
+          "price": 349
+        },
+        {
+          "name": "Verdure Grigliate",
+          "description": "Tomato, mozzarella, grilled onion slices, grilled green capsicum, grilled mushroom, and caramelized apple.",
+          "price": 399
+        },
+        {
+          "name": "Quattro Formaggi",
+          "description": "A pizza topped with a combination of four different types of cheese, often including mozzarella, Parmesan, Gorgonzola, and sometimes Fontina or other flavorful cheeses.",
+          "price": 449
+        }
+      ]
+    },
+    {
+      "section": "Pasta",
+      "items": [
+        {
+          "name": "Rigatoni Gratinati",
+          "description": "With Napoletana sauce, covered with grilled cheese.",
+          "price": 349
+        },
+        {
+          "name": "Verde Lasagna",
+          "description": "Spinach, exotic vegetables, and tomato sauce.",
+          "price": 399
+        },
+        {
+          "name": "Fussili Pesto Verde",
+          "description": "Fusilli pasta tossed in traditional pesto sauce.",
+          "price": 349
+        },
+        {
+          "name": "Penne Alfredo",
+          "description": "Penne pasta in white sauce and exotic vegetables.",
+          "price": 299
+        },
+        {
+          "name": "Spaghetti Aglio - E - Olio",
+          "description": "Spaghetti tossed in traditional Agio e Olio sauce.",
+          "price": 349
+        },
+        {
+          "name": "Mac & Cheese With Pineapple",
+          "description": "Macaroni pasta served with pineapple in white sauce.",
+          "price": 299
+        },
+        {
+          "name": "Penne Arrabiata",
+          "description": "Arrabiata sauce, which translate to angry sauce in italian, and it is a spicy.",
+          "price": 299
+        }
+      ]
+    },
+    {
+      "section": "The Bowls",
+      "items": [
+        {
+          "name": "Meditarian Bowl",
+          "description": "The Mediterranean bowl features crispy roasted chickpeas served over fresh lettuce and veggies with fluffy quinoa, all topped with creamy hummus.",
+          "price": 399
+        },
+        {
+          "name": "Burrito Bowl",
+          "description": "Loaded with rice, black beans, Pico de Gallo, fajita veggies, corn, and lettuce.",
+          "price": 399
+        },
+        {
+          "name": "Italian Bowl",
+          "description": "Dig into all the best flavors of Italy with this healthy, vegan Italian Bowl with roasted vegetables and quinoa.",
+          "price": 399
+        }
+      ]
+    },
+    {
+      "section": "Sizzlers",
+      "items": [
+        {
+          "name": "Mexican Sizzler",
+          "description": "Mexican rice, Bean patty, Bean curry, Sauté sweet corn, salsa, sour cream, Fajita tossed vegetables",
+          "price": 699
+        },
+        {
+          "name": "Italian Sizzler",
+          "description": "Herbs pesto rice, arabiata pasta, Sauteed Veggies, Potato Chips, Garlic Bread",
+          "price": 699
+        },
+        {
+          "name": "Arabic Sizzler",
+          "description": "Arabic tomato rice, falafel Tikki, vegetable ball in Tremenda sauce, lavash bread, tabbouleh, and tzatziki dip.",
+          "price": 649
+        },
+        {
+          "name": "Amore Special Sizzler",
+          "description": "Pepper mushroom rice, stuffed grilled cottage cheese, creamy veggies, Potato wedges topped with smoked BBQ sauce",
+          "price": 749
+        }
+      ]
+    },
+    {
+      "section": "Desserts",
+      "items": [
+        {
+          "name": "Brownie Cheese Cake",
+          "description": "A dessert that combines a fudgy brownie base with a creamy cheese cake filling",
+          "price": 349
+        },
+        {
+          "name": "Banana Nutella Croissant",
+          "description": "Flaky, buttery pastries filled with luscious Nutella spread and sweet, caramelized banana slices",
+          "price": 299
+        },
+        {
+          "name": "Gulab Jamun Cheese Cake",
+          "description": "A fusion dessert that combines the flavors of the classic Indian sweet, Gulab jamun, with the richness of a cheesecake.",
+          "price": 349
+        },
+        {
+          "name": "Croissant Tiramisu",
+          "description": "The buttery, flaky texture of a classic croissant with the rich, creamy, and coffee-infused flavors of tiramisu.",
+          "price": 349
+        },
+        {
+          "name": "Red Velvet Cheese Cake",
+          "description": "It is a four layered dessert with two layers of red velvet cake and creamy cheesecake, all covered in creamy cheese icing.",
+          "price": 349
+        }
+      ]
+    }
+  ]
+}
