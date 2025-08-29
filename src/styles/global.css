@@ -101,7 +101,7 @@ body {
 
 @font-face {
   font-family: "Agrandir";
-  src: "/Agrandir-WideLight.otf";
+  src: url("/fonts/Agrandir-WideLight.otf") format("opentype");
   font-weight: 300 400;
   font-display: swap;
 }
