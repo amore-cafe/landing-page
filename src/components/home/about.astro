@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import InstagramLogo from "@assets/logos/instagram-logo.svg";
+import AmoreLogo from "@assets/images/amore-logo-rect.png";
 ---
 
 <section class="about-section flex p-4">
@@ -8,11 +9,16 @@ import InstagramLogo from "@assets/logos/instagram-logo.svg";
   <div class="about-content w-full flex flex-col-reverse lg:flex-row gap-8">
     <div class="about-text flex-1">
       <div class="text-content">
-        <div class="text-line"></div>
-        <div class="text-line"></div>
-        <div class="text-line"></div>
-        <div class="text-line"></div>
-        <div class="text-line"></div>
+        <div class="text">
+          Welcome to Amore Cafe. Our journey began not just with a love for
+          coffee, but with a love for the moments that coffee creates. "Amore,"
+          the Italian word for love, is the heart of our philosophy and the most
+          important ingredient in everything we serve. <br /><br />
+          We were founded on the simple belief that a cafe should be more than just
+          a place to get your caffeine fix—it should be a second home. A warm, inviting
+          space where the community can gather, friends can connect, and individuals
+          can find a moment of peace in their busy day.
+        </div>
       </div>
       <div class="social-info">
         <a href="https://www.instagram.com/amore.amd" class="social-handle">
@@ -28,7 +34,9 @@ import InstagramLogo from "@assets/logos/instagram-logo.svg";
       </div>
     </div>
     <div class="about-image w-full flex-1 border border-[#996365]">
-      <div class="image-placeholder"></div>
+      <div class="image p-2">
+        <Image src={AmoreLogo} alt="" />
+      </div>
     </div>
   </div>
 </section>
@@ -58,10 +66,8 @@ import InstagramLogo from "@assets/logos/instagram-logo.svg";
     width: 100%;
   }
 
-  .text-line {
-    height: 1.5rem;
+  .text {
     width: 100%;
-    background: #d9d9d9;
   }
 
   .social-info {
@@ -91,11 +97,5 @@ import InstagramLogo from "@assets/logos/instagram-logo.svg";
         line-height: normal;
       }
     }
-  }
-
-  .image-placeholder {
-    height: 368px;
-    width: 100%;
-    background: #d9d9d9;
   }
 </style>
