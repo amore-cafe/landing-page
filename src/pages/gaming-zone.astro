@@ -1,0 +1,118 @@
+---
+import IndexLayout from "@/layouts/indexLayout.astro";
+import GamingBG from "@assets/images/gaming-zone.jpg";
+---
+
+<IndexLayout>
+  <main class="h-auto w-full flex flex-col">
+    <header
+      class="header-section flex h-24 p-4 items-center gap-4 flex-shrink-0 bg-none absolute z-10 w-full">
+      <div class="header-divider w-16 h-px bg-accent"></div>
+      <h1
+        class="menu-title text-accent font-agrandir text-5xl font-light leading-none">
+        Gaming
+      </h1>
+      <div class="header-divider w-full h-px bg-accent"></div>
+    </header>
+    <section
+      class="game-zone-section relative h-screen"
+      style={`background-image: url('${GamingBG.src}'); background-size: cover; background-position: center;`}>
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="
+      background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);
+      z-index: 0;
+    ">
+      </div>
+      <div class="game-zone-content text-xl z-10 px-8 md:px-32">
+        <div
+          class="game-zone-text text-3xl md:text-6xl text-white font-agrandir">
+          <span class="leading-5 w-full"> Enjoy gaming and refreshments </span>
+          <br />
+          <span class="leading-5 w-full"> in a cozy atmosphere. </span>
+        </div>
+        <div
+          class="game-zone-text text-xl md:text-3xl text-white font-agrandir">
+          <span>Right above the main office!</span>
+        </div>
+        <div class="flex flex-col gap-4">
+          <a
+            href="/"
+            class="cta-btn primary no-underline font-agrandir flex justify-between">
+            <svg
+              width="37"
+              height="16"
+              viewBox="0 0 37 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM37 8V7L1 7V8V9L37 9V8Z"
+                fill="white"></path>
+            </svg>
+            <span class="flex-0 tracking-wider">Home</span>
+          </a>
+          <a href="/menu" class="cta-btn secondary no-underline font-agrandir">
+            <span class="tracking-wider">Menu</span>
+            <svg
+              width="37"
+              height="16"
+              viewBox="0 0 37 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M36.7071 8.70711C37.0976 8.31658 37.0976 7.68342 36.7071 7.29289L30.3431 0.928932C29.9526 0.538408 29.3195 0.538408 28.9289 0.928932C28.5384 1.31946 28.5384 1.95262 28.9289 2.34315L34.5858 8L28.9289 13.6569C28.5384 14.0474 28.5384 14.6805 28.9289 15.0711C29.3195 15.4616 29.9526 15.4616 30.3431 15.0711L36.7071 8.70711ZM0 8L0 9L36 9V8V7L0 7L0 8Z"
+                fill="black"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</IndexLayout>
+
+<style lang="scss">
+  .game-zone-section {
+    min-height: 75vh;
+    max-height: 100vh;
+    display: flex;
+    padding: 16px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 100%;
+
+    .game-zone-content {
+      display: flex;
+      height: 640px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3rem;
+
+      .cta-btn {
+        display: flex;
+        width: 224px;
+        height: 48px;
+        padding: 8px 16px;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+
+        font-size: 16px;
+        font-weight: 400;
+
+        &.primary {
+          background: #996365;
+          color: #fff;
+        }
+
+        &.secondary {
+          background: #f9f3e7;
+          color: #000;
+        }
+      }
+    }
+  }
+</style>

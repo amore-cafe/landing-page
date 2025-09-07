@@ -1,18 +1,13 @@
 ---
 import Grid from "@components/menu/grid.svelte";
 import IndexLayout from "@/layouts/indexLayout.astro";
-import { Image } from "astro:assets";
-import AmoreLogo from "@assets/images/amore-logo-rect.png";
 ---
 
 <IndexLayout>
   <main class="menu-page flex flex-col h-screen bg-accent gap-4">
     <!-- Menu Header -->
     <header
-      class="header-section flex h-24 p-4 items-center gap-4 flex-shrink-0 bg-[#996365]">
-      <a href="/">
-        <Image src={AmoreLogo} alt="" height={64} />
-      </a>
+      class="header-section flex h-24 p-4 items-center gap-4 flex-shrink-0 bg-dark-accent">
       <div class="header-divider w-16 h-px bg-accent"></div>
       <h1
         class="menu-title text-accent font-agrandir text-5xl font-light leading-none">

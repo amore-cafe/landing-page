@@ -4,7 +4,8 @@ import InstagramLogo from "@assets/logos/instagram-logo.svg";
 import AmoreLogo from "@assets/images/amore-logo-rect.png";
 ---
 
-<section class="about-section flex p-4">
+<section
+  class="about-section flex p-4 max-w-[1440px] mx-auto flex-col items-center gap-12">
   <h2 class="section-title">Who we are</h2>
   <div class="about-content w-full flex flex-col-reverse lg:flex-row gap-8">
     <div class="about-text flex-1">
@@ -33,7 +34,7 @@ import AmoreLogo from "@assets/images/amore-logo-rect.png";
         </a>
       </div>
     </div>
-    <div class="about-image w-full flex-1 border border-[#996365]">
+    <div class="about-image w-full flex-1 border border-dark-accent">
       <div class="image p-2">
         <Image src={AmoreLogo} alt="" />
       </div>

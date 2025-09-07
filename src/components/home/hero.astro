@@ -4,26 +4,26 @@ import { Image } from "astro:assets";
 ---
 
 <section
-  class="hero-section relative"
+  class="relative flex min-h-[85vh] max-w-full flex-col items-start justify-center gap-4 py-4"
   style={`background-image: url('${HeroBG.src}'); background-size: cover; background-position: center;`}>
   <div
     class="absolute inset-0 pointer-events-none"
     style="
     background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);
-    z-index: 0;
   ">
   </div>
-  <div class="hero-content text-xl z-10 px-8 md:px-32">
-    <div class="hero-text text-4xl md:text-6xl text-white font-agrandir">
+  <div
+    class="z-10 flex h-[640px] flex-col items-start justify-center gap-12 px-8 text-xl">
+    <div class="text-4xl text-white font-agrandir md:text-6xl">
       <span>
         Your new favorite place <br />
-        to connect and unwind.</span
+        to connect, enjoy and unwind.</span
       >
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 tracking-wide">
       <a
         href="/menu"
-        class="cta-btn primary no-underline font-agrandir flex justify-between">
+        class="flex h-12 w-56 cursor-pointer items-center justify-between border-none bg-dark-accent py-2 px-4 text-base font-normal text-white no-underline font-agrandir">
         <span class="flex-1">What we serve</span>
         <svg
           width="37"
@@ -35,7 +35,9 @@ import { Image } from "astro:assets";
             fill="white"></path>
         </svg>
       </a>
-      <a href="/location" class="cta-btn secondary no-underline font-agrandir">
+      <a
+        href="/location"
+        class="flex h-12 w-56 cursor-pointer items-center justify-between border-none bg-accent py-2 px-4 text-base font-normal text-black no-underline font-agrandir">
         <span>Where we are</span>
         <svg
           width="37"
@@ -48,54 +50,26 @@ import { Image } from "astro:assets";
             fill="black"></path>
         </svg>
       </a>
+      <a
+        href="/gaming-zone"
+        class="flex h-12 w-56 cursor-pointer items-center justify-between border-none bg-accent py-2 px-4 text-base font-normal text-black no-underline font-agrandir">
+        <span class="flex-1">Gaming</span>
+        <svg
+          width="37"
+          height="16"
+          viewBox="0 0 37 16"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M36.7071 8.70711C37.0976 8.31658 37.0976 7.68342 36.7071 7.29289L30.3431 0.928932C29.9526 0.538408 29.3195 0.538408 28.9289 0.928932C28.5384 1.31946 28.5384 1.95262 28.9289 2.34315L34.5858 8L28.9289 13.6569C28.5384 14.0474 28.5384 14.6805 28.9289 15.0711C29.3195 15.4616 29.9526 15.4616 30.3431 15.0711L36.7071 8.70711ZM0 8L0 9L36 9V8V7L0 7L0 8Z"
+            fill="black"></path>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
 
-<style lang="scss">
-  /* Hero Section */
-  .hero-section {
-    min-height: 75vh;
-    max-height: 100vh;
-    display: flex;
-    padding: 16px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    max-width: 100%;
-
-    .hero-content {
-      display: flex;
-      height: 640px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 3rem;
-
-      .cta-btn {
-        display: flex;
-        width: 224px;
-        height: 48px;
-        padding: 8px 16px;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        cursor: pointer;
-
-        font-size: 16px;
-        font-weight: 400;
-
-        &.primary {
-          background: #996365;
-          color: #fff;
-        }
-
-        &.secondary {
-          background: #f9f3e7;
-          color: #000;
-        }
-      }
-    }
+<style>
+  section {
+    align-items: start;
   }
 </style>
