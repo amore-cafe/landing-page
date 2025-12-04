@@ -95,13 +95,13 @@
       align: "start",
     }}
   >
-    <CarouselContent class="h-96">
+    <CarouselContent class="h-[80vh]">
       {#each testimonials as testimonial}
         <CarouselItem class="basis-1/2">
           <div
             class="testimonial-card flex flex-col justify-around py-4 bg-dark-accent"
           >
-            <p class="text-lg font-inter mb-4 w-full text-wrap text-white">
+            <p class="text-lg font-inter mb-4 text-wrap text-white">
               "{testimonial.text}"
             </p>
             <span class="text-accent">— {testimonial.author}</span>

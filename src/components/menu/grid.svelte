@@ -18,18 +18,18 @@
     >
       <Accordion.Header class="w-full hover:underline">
         <Accordion.Trigger
-          class="section-header flex p-4 items-center justify-between gap-4 w-full bg-accent font-agrandir text-3xl font-light"
+          class="section-header flex p-4 items-center justify-between gap-4 w-full bg-accent font-agrandir text-3xl font-light text-left"
         >
           {MenuItem.section}
           <CaretDown class="size-4 transition-transform duration-200" />
         </Accordion.Trigger>
       </Accordion.Header>
       <Accordion.Content
-        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm w-full px-8"
+        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm w-full px-6 md:px-8"
       >
         {#each MenuItem.items as item}
           <div
-            class="menu-item flex w-full px-4 p-2 justify-between items-center border-b border-b-black last:border-b-0 not-italic hover:italic"
+            class="menu-item flex w-full md:px-4 py-2 justify-between items-between border-b first:border-t last:border-b-0 not-italic hover:italic"
           >
             <div class="item-details flex-1 flex flex-col items-start">
               <div
@@ -38,7 +38,7 @@
                 {item.name}
               </div>
               <div
-                class="item-description text-black font-agrandir text-base font-light leading-normal not-italic"
+                class="item-description w-[20ch] md:w-auto text-black font-agrandir text-base font-light leading-normal not-italic truncate hover:whitespace-normal"
               >
                 {item.description}
               </div>
