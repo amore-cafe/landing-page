@@ -1,6 +1,7 @@
 ---
 import HeroBG from "@assets/images/hero-bg.jpg";
 import { Image } from "astro:assets";
+import AmoreLogo from "@assets/images/amore-logo-new-circle.png";
 ---
 
 <section
@@ -11,6 +12,10 @@ import { Image } from "astro:assets";
     style="
     background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%);
   ">
+  </div>
+  <div
+    class="absolute top-0 left-1/2 -translate-x-1/2 bg-accent w-20 rounded-full flex justify-center">
+    <Image src={AmoreLogo} alt="" height={80} />
   </div>
   <div
     class="z-10 flex h-[640px] flex-col items-start justify-center gap-12 px-8 text-xl">
