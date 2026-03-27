@@ -3,8 +3,8 @@ import Testimonials from "@components/home/testimonials.svelte";
 ---
 
 <section
-  class="social-proof-section w-full flex flex-col items-center py-12 max-w-[1440px] mx-auto gap-8">
-  <h2 class="text-3xl font-boldtext-center mb-8 font-inter">What people say</h2>
+  class='social-proof-section w-full flex flex-col items-center py-12 mx-auto gap-8'>
+  <h2 class='text-3xl font-boldtext-center mb-8 font-inter'>What people say</h2>
 
-  <Testimonials client:load />
+  <Testimonials client:only="svelte" />
 </section>

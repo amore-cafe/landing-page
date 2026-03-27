@@ -1,31 +1,31 @@
 <script>
-  import "@styles/global.css";
-  import { Accordion } from "bits-ui";
-  import CaretDown from "phosphor-svelte/lib/CaretDown";
+  import Accordion from "@lib/components/ui/accordion/accordion.svelte";
+  import AccordionItem from "@lib/components/ui/accordion/accordion-item.svelte";
+  import AccordionTrigger from "@lib/components/ui/accordion/accordion-trigger.svelte";
+  import AccordionContent from "@lib/components/ui/accordion/accordion-content.svelte";
   import { menu } from "@data/menu.json";
-
-  let { class: customClass = "" } = $props();
 </script>
 
-<Accordion.Root
-  class={`menu-grid-container w-full p-8 bg-accent ${customClass}`}
+<Accordion
+  class={`menu-grid-container w-full p-4 px-2 md:p-8 bg-accent h-max overflow-y-scroll`}
   type="single"
+  value="0"
 >
   {#each menu as MenuItem, index}
-    <Accordion.Item
+    <AccordionItem
       class="menu-section flex flex-col items-start gap-0 w-full border-b hover:italic"
       value={index}
     >
-      <Accordion.Header class="w-full hover:underline">
-        <Accordion.Trigger
+      <div class="w-full hover:underline">
+        <AccordionTrigger
           class="section-header flex p-4 items-center justify-between gap-4 w-full bg-accent font-agrandir text-3xl font-light text-left"
         >
           {MenuItem.section}
-          <CaretDown class="size-4 transition-transform duration-200" />
-        </Accordion.Trigger>
-      </Accordion.Header>
-      <Accordion.Content
-        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm w-full px-6 md:px-8"
+        </AccordionTrigger>
+      </div>
+
+      <AccordionContent
+        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm px-6 md:px-8"
       >
         {#each MenuItem.items as item}
           <div
@@ -50,7 +50,7 @@
             </div>
           </div>
         {/each}
-      </Accordion.Content>
-    </Accordion.Item>
+      </AccordionContent>
+    </AccordionItem>
   {/each}
-</Accordion.Root>
+</Accordion>

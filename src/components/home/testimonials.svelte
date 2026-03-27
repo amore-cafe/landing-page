@@ -5,22 +5,6 @@
   import CarouselPrevious from "@lib/components/ui/carousel/carousel-previous.svelte";
   import CarouselNext from "@lib/components/ui/carousel/carousel-next.svelte";
 
-  import type { CarouselAPI } from "@lib/components/ui/carousel/context.js";
-
-  let api = $state<CarouselAPI>();
-
-  const count = $derived(api ? api.scrollSnapList().length : 0);
-  let current = $state(0);
-
-  $effect(() => {
-    if (api) {
-      current = api.selectedScrollSnap() + 1;
-      api.on("select", () => {
-        current = api!.selectedScrollSnap() + 1;
-      });
-    }
-  });
-
   const testimonials = [
     {
       text: "The ambience is perfect for catching up with friends. The coffee is always fresh and delicious!",
@@ -59,7 +43,6 @@
 
 {#if screensize === "md"}
   <Carousel
-    setApi={(emblaApi) => (api = emblaApi)}
     class="flex flex-col w-auto px-0 cursor-grab"
     opts={{
       align: "start",
@@ -67,7 +50,7 @@
   >
     <CarouselContent class="flex gap-4 flex-row h-max">
       {#each testimonials as testimonial}
-        <CarouselItem class="md:basis-1/3">
+        <CarouselItem class="basis-1/4">
           <div class="testimonial-card md:min-w-48 border border-dark-accent">
             <div
               class="testimonial-content flex flex-col justify-between h-full py-4"
@@ -83,13 +66,9 @@
         >
       {/each}
     </CarouselContent>
-    <div class="text-muted-foreground py-2 text-center text-sm">
-      {current} of {count}
-    </div>
   </Carousel>
 {:else}
   <Carousel
-    setApi={(emblaApi) => (api = emblaApi)}
     orientation="vertical"
     opts={{
       align: "start",
@@ -109,9 +88,6 @@
         </CarouselItem>
       {/each}
     </CarouselContent>
-    <div class="text-muted-foreground py-2 text-center text-sm">
-      {current} of {count}
-    </div>
   </Carousel>
 {/if}
 
