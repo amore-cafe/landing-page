@@ -4,7 +4,9 @@ import { Image } from "astro:assets";
 import AmoreLogo from "@assets/images/amore-logo-rect.png";
 
 const phoneNumber = "916351560030";
-const message = "Hi! I'd like to make a reservation at Amore Cafe";
+const callNumber = "+916351560030";
+const message =
+  "Hi! I'd like to make a reservation at Amore Cafe and claim the 15% website reservation offer.";
 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 ---
 
@@ -66,6 +68,10 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
           <p class='text-xl md:text-2xl text-gray-600 font-inter'>
             Book a table or gaming session at Amore Cafe
           </p>
+          <div
+            class='inline-flex items-center rounded-full bg-dark-accent px-5 py-2 text-sm md:text-base font-agrandir text-white'>
+            Exclusive 15% OFF on reservations made through this website
+          </div>
         </div>
 
         <!-- Reservation Types -->
@@ -214,7 +220,21 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
           </div>
 
           <!-- WhatsApp Button -->
-          <div class='text-center mt-12'>
+          <div class='text-center mt-12 flex flex-col items-center gap-4'>
+            <a
+              href={`tel:${callNumber}`}
+              class='inline-flex items-center gap-3 px-10 py-5 bg-dark-accent text-white font-agrandir text-xl rounded-lg hover:opacity-90 transition-all hover:scale-105 active:scale-95 shadow-lg'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 24 24'
+                fill='currentColor'
+                class='w-7 h-7'>
+                <path
+                  d='M2.25 6.75A2.25 2.25 0 014.5 4.5h2.286a2.25 2.25 0 012.186 1.718l.877 3.508a2.25 2.25 0 01-.98 2.435l-1.332.8a12.04 12.04 0 005.778 5.778l.8-1.332a2.25 2.25 0 012.435-.98l3.508.877A2.25 2.25 0 0121 19.214V21.5a2.25 2.25 0 01-2.25 2.25h-.75C9.611 23.75 2.25 16.389 2.25 7.5v-.75z'
+                ></path>
+              </svg>
+              <span>Call for Reservation</span>
+            </a>
             <a
               href={whatsappUrl}
               target='_blank'
@@ -233,6 +253,9 @@ const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mess
             </a>
             <p class='text-gray-500 font-inter text-sm mt-4'>
               Available 7 days a week, 9 AM - 11 PM
+            </p>
+            <p class='text-dark-accent font-agrandir text-sm mt-2'>
+              Mention "Website Reservation Offer" on WhatsApp to claim 15% OFF.
             </p>
           </div>
         </div>
